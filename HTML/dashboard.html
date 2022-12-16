@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lentopeli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style-home.css">
+    <script type="module" src="../Javascript/main.js" defer></script>
+    <script src="../Javascript/money.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin="" defer></script>
+    <script src="../Javascript/map.js" defer></script>
+
+
+</head>
+<body>
+<div class="container">
+  <aside>
+    <div class="top">
+      <div class="logo">
+        <img src="../CSS/images/logo.png" alt="">
+      </div>
+      <div class="close" id="close-btn">
+        <span class="material-icons-sharp">close</span>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="#" class="active">
+        <span class="material-icons-sharp">dashboard</span>
+        <h3>Dashboard</h3>
+      </a>
+      <a href="flight.html">
+        <span class="material-icons-sharp">flight</span>
+        <h3>Flights</h3>
+      </a>
+      <a href="airport.html">
+        <span class="material-icons-sharp">travel_explore</span>
+        <h3>Airport</h3>
+      </a>
+      <a href="leaderboard.html">
+        <span class="material-icons-sharp">leaderboard</span>
+        <h3>Leaderboard</h3>
+      </a>
+      <a href="store.html">
+        <span class="material-icons-sharp">shopping_cart</span>
+        <h3>Store</h3>
+      </a>
+      <a href="Guide.html"><span class="material-icons-sharp">info</span>
+        <h3>Guide</h3>
+      </a>
+      <a href="register.html?">
+        <span class="material-icons-sharp">logout</span>
+        <h3>Log Out</h3>
+      </a>
+    </div>
+  </aside>
+  <main>
+      <h1>Welcome back, <span id="name"></span>!</h1>
+      <h1 class="city"></h1>
+
+    <div class="insights">
+      <!------------------------WEATHER------------------------>
+      <div class="weather">
+        <span class="material-icons-sharp">nights_stay</span>
+        <div class="middle">
+          <div class="left">
+            <h3>Weather</h3>
+            <h1 class="desc" id="desc"></h1>
+          </div>
+          <div class="progress">
+            <div class="number">
+              <p class="degree" id="degree"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------------------Money------------------------>
+      <div class="money">
+        <span class="material-icons-sharp">account_balance_wallet</span>
+        <div class="middle">
+          <div class="left">
+            <h3>Available</h3>
+            <h1>Balance</h1>
+          </div>
+          <div class="progress">
+            <div class="number">
+              <p class="balance" id="balance"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------------------co2------------------------>
+      <div class="co2">
+        <span class="material-icons-sharp">co2</span>
+        <div class="middle">
+          <div class="left">
+            <h3>co2</h3>
+            <h1>Budget</h1>
+          </div>
+          <div class="progress">
+            <div class="number">
+              <p class="consumed" id="consumed-balance"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------Map------------------------>
+
+    <div class="map">
+    <div id="map"></div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+  <!------------------------End Of Main------------------------>
+
+  <div class="right">
+
+         <div class="info">
+           <p id="namehtml"></p>
+           <p><span class="namehtml"></span></p>
+           <small class="text-muted"></small>
+         </div>
+         <div class="profile-photo">
+           <img src="../CSS/images/profile-Muath.png" alt="Profile Picture">
+         </div>
+       </div>
+  </div>
+</body>
+</html>

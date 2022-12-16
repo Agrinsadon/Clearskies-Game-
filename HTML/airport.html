@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lentopeli</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style-aiport.css">
+    <script src="../Javascript/airport-search.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+</head>
+<body>
+<div class="container">
+  <aside>
+    <div class="top">
+      <div class="logo">
+          <img src="../CSS/images/logo.png" alt="">
+        </div>
+      <div class="close" id="close-btn">
+        <span class="material-icons-sharp">close</span>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="dashboard.html">
+        <span class="material-icons-sharp">dashboard</span>
+        <h3>Dashboard</h3>
+      </a>
+      <a href="flight.html">
+        <span class="material-icons-sharp">flight</span>
+        <h3>Flights</h3>
+      </a>
+      <a href="airport.html" class="active">
+        <span class="material-icons-sharp">travel_explore</span>
+        <h3>Airport</h3>
+      </a>
+      <a href="leaderboard.html">
+        <span class="material-icons-sharp">leaderboard</span>
+        <h3>Leaderboard</h3>
+      </a>
+      <a href="store.html">
+        <span class="material-icons-sharp">shopping_cart</span>
+        <h3>Store</h3>
+      </a>
+      <a href="Guide.html"><span class="material-icons-sharp">info</span>
+        <h3>Guide</h3>
+      </a>
+
+      <a href="register.html?">
+        <span class="material-icons-sharp">logout</span>
+        <h3>Log Out</h3>
+      </a>
+    </div>
+  </aside>
+  <main>
+    <h1>Airport Search</h1>
+    <div class="boxContainer">
+        <table class="elementsContainer">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Country name" class="search" id="search">
+                </td>
+                <td>
+                    <a class="button"><i class="material-icons">search</i></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!------------------------Map------------------------>
+          <div class="map">
+            <table>
+              <thead>
+              <tr class="test">
+                <th>Name</th>
+                <th>ICAO-code</th>
+              </tr>
+              </thead>
+              <tbody id="data-output">
+
+              </tbody>
+            </table>
+          </div>
+  </main>
+</div>
+</body>
+</html>
