@@ -117,7 +117,7 @@ function popup(){
 async function restart(){
   let name = localStorage.getItem("textvalue");
   const restart = await fetch('http://127.0.0.1:1029/restart/' + name);
-  window.location.href="http://localhost:63342/ClearSkies/HTML/dashboard.html";
+  window.location.href="/ClearSkies/HTML/dashboard.html";
   localStorage.removeItem('thunderstrom')
   localStorage.removeItem('drizzle')
   localStorage.removeItem('rain')
